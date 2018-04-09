@@ -1,5 +1,5 @@
 
-rem https://superuser.com/a/460648/39800
+@rem https://superuser.com/a/460648/39800
 @echo off
 set expanded_list=
 for /f "tokens=*" %%F in ('dir /b /a:-d "*.pdf"') do call set expanded_list=%%expanded_list%% "%%F"
