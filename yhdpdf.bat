@@ -7,5 +7,4 @@ for /f "tokens=*" %%F in ('dir /b /a:-d "*.pdf"') do call set expanded_list=%%ex
 echo expanded_list is: 
 echo %expanded_list%
 
-
 C:\softat\gs\gs9.23\bin\gswin64.exe -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=mlasku.pdf %expanded_list%
